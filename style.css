@@ -1,0 +1,29 @@
+.imagem-carrossel {
+    object-fit: cover;
+    height: 400px;
+}
+
+.imagem-carrossel-dois {
+    object-fit: cover;
+    object-position: 50% 30%;
+    height: 400px;
+}
+
+.imagem-carrossel-tres {
+    object-fit: cover;
+    object-position: 80% 80%;
+    height: 400px;
+}
+
+.imagem-card {
+    height: 180px;
+}
+
+.card-bloco {
+    object-position: 20%;
+}
+
+.fonte-titulo {
+    font-family: 'Nunito', sans-serif;
+}
+
