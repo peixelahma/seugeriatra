@@ -27,3 +27,10 @@
     font-family: 'Nunito', sans-serif;
 }
 
+.whatsapp {
+    position: fixed;
+    top: 88%;
+    right: 1%;
+    padding: 2px;
+    z-index: 10000000;
+}
