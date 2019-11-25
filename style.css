@@ -19,18 +19,57 @@
     height: 180px;
 }
 
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-largura {
+    max-width: 18rem;
+}
+
 .card-bloco {
     object-position: 20%;
 }
 
-.fonte-titulo {
+.botao-cor-especial {
+    background-color:rgb(52, 61, 100);
+    color: white;
+}
+
+.borda-cor-especial {
+    border-color: rgb(52, 61, 100);
+}
+
+body {
     font-family: 'Nunito', sans-serif;
+}
+
+.texto-cor-especial {
+    color:rgb(52, 61, 100)!important;
 }
 
 .whatsapp {
     position: fixed;
-    top: 88%;
+    top: 82%;
     right: 1%;
     padding: 2px;
     z-index: 10000000;
+}
+
+.marcador-lista-circulo {
+    list-style-type: disc;
+}
+
+.map-container{
+    overflow:hidden;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }

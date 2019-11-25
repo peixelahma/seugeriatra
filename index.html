@@ -1,129 +1,290 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Fonte do google-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!--Meu CSS-->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>SeuGeriatra</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
 
+  <!-- Fonte do google-->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+
+  <!--Meu CSS-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>SeuGeriatra</title>
+</head>
+
+<body>
+
+  <header>
     <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="img/cerebro.svg" width=32px>   SeuGeriatra</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup" >
-            <div class="navbar-nav" >
-                <a class="nav-item nav-link active" href="#">Início<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Artigos</a>
-                <a class="nav-item nav-link" href="#">Dra. Juliana Dias</a>
-                <a class="nav-item nav-link" href="#">Contato</a>
-            </div>
-        </div>
+      <a class="navbar-brand texto-cor-especial" href="#">
+        <img src="img/cerebro.svg" width=32px> SeuGeriatra
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li>
+            <a class="nav-item nav-link active" href="#">Início
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li>
+            <a class="nav-item nav-link" href="#">Artigos</a>
+          </li>
+          <li>
+            <a class="nav-item nav-link" href="#">Dra. Juliana Dias</a>
+          </li>
+          <a class="nav-item nav-link" data-toggle="modal" data-target="#modal-contato" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
     </nav>
+  </header>
 
-    <div class="bd-example">
-        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/consulta-medica.jpg" class="d-block w-100 imagem-carrossel" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h1 class="fonte-titulo display-4">Cuidados de um Especialista</h1>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/familia-caminhando.jpg" class="d-block w-100 imagem-carrossel-dois" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h1 class="fonte-titulo display-4">Suporte Familiar</h1>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="img/esporte-natacao.jpg" class="d-block w-100 imagem-carrossel-tres" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h1 class="fonte-titulo display-4">Envelhecimento Ativo</h1>
-              </div>
+  <main>
+
+    <section class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/aferindo-pressao.jpg" class="d-block w-100 imagem-carrossel" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Cuidados de um Especialista</h1>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div class="carousel-item">
+            <img src="img/familia-caminhando.jpg" class="d-block w-100 imagem-carrossel-dois" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Suporte Familiar</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/esporte-natacao.jpg" class="d-block w-100 imagem-carrossel-tres" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h1 class="display-4">Envelhecimento Ativo</h1>
+            </div>
+          </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
+    </section>
 
+    <section id="titulo">
+      <h2 class="text-center texto-cor-especial pt-5 pb-3">Artigos em Destaque</h2>
+    </section>
 
-    <h2 class="text-center fonte-titulo pt-5 pb-3">Artigos em Destaque</h2>
+    <section class="container" id="artigos">
+      <div class="row justify-content-center">
 
+        <article class="card borda-cor-especial card-largura col-md-4 p-0 m-4">
+          <img src="img/dependencia-cuidados.jpg" class="card-img-top card-posicao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn botao-cor-especial">Ler</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura col-md-4 p-0 m-4">
+          <img src="img/alzheimer.jpg" class="card-img-top card-posicao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn botao-cor-especial">Ler</a>
+          </div>
+        </article>
+
+        <article class="card borda-cor-especial card-largura col-md-4 p-0 m-4">
+          <img src="img/casal-feliz.jpg" class="card-img-top card-posicao-imagem" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn botao-cor-especial">Ler</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!--
+    <h2 class="text-center pt-5 pb-3">Artigos em Destaque</h2>
 
     <div class="card-deck mx-5 px-3 ">
-        <div class="card" >
-            <img src="img/dependencia-cuidados.jpg" class="card-img-top imagem-card" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-                    little bit longer.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+      <div class="card">
+        <img src="img/dependencia-cuidados.jpg" class="card-img-top imagem-card" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little
+            bit longer.</p>
         </div>
-        <div class="card">
-            <img src="img/alzheimer.jpg" class="card-img-top imagem-card" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
         </div>
-        <div class="card">
-            <img src="img/casal-feliz.jpg" class="card-img-top imagem-card" alt="...">
-            <div class="card-body ">
-                <h5 class="card-title ">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even
-                    longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-            </div>
+      </div>
+      <div class="card">
+        <img src="img/alzheimer.jpg" class="card-img-top imagem-card" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
         </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img src="img/casal-feliz.jpg" class="card-img-top imagem-card " alt="...">
+        <div class="card-body ">
+          <h5 class="card-title ">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even
+            longer content than the first to show that equal height action.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
     </div>
- 
 
-    <h2>texto exemplo</h2>
+    -->
+    
+    <section class="container-fluid bg-light mt-5" id="dados profissionais">
+      <div class="row justify-content-center">
 
+        <figure class="col-md-6 p-3 mb-0">
+            <img src="img/consulta-medica.jpg" class="figure-img img-fluid d-flex ">
+        </figure>
+
+        <article class="col-md-6 p-3 d-flex align-items-center">
+          <div class="formação">
+            <h5>Dra. Juliana Dias</h5>
+            <p>Médica Geriatra e Clínica Geral (CRM/CRP/CRO): MG 51349</p>
+            <p>Formação:</p>
+            <ul class="marcador-lista-circulo">
+              <li>Graduação pela Universidade Grande Rio - UNIGRANRIO - RJ</li>
+              <li>Especialização em Geriatria, Centro Interdisciplinar de Assistência e Pesquisa em Envelhecimento - CIAPE, 2012</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="titulo">
+        <h2 class="text-center texto-cor-especial pt-5 pb-3">Atendimentos</h2>
+    </section>
+
+    <!--Google map-->
+    <div id="map-container-google-1" class="map-container" style="height: 400px">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.8756922826333!2d-44.00235608547155!3d-19.887470242123108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa69135ef68ed97%3A0xb934b56fd404b380!2sRua%20Dr.%20Sylvio%20Menicucci%2C%20655%20-%20Castelo%2C%20Belo%20Horizonte%20-%20MG%2C%2030840-480!5e0!3m2!1spt-BR!2sbr!4v1574650404705!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    
+    <h4 class="mt-4">Consultórios:</h4>
+
+    <section class="container" id="endereço">
+      <div class="row justify-content-center">
+    
+        <article class="col-md-4 p-2">
+          <h5>Clínica Evoluir</h5>
+          <p class="p-0 m-0">Rua Sylvio Menicucci, 655, Castelo , <br> Belo Horizonte - MG</p>
+          <p class="p-0 m-0">Telefone: (31) 3476-6296</p>
+        </article>
+    
+        <article class="col-md-4 p-2">
+          <h5>Primacordis Clínica Médica</h5>
+          <p class="p-0 m-0">Rua Alcides Lins 320 Venda Nova, Venda Nova , <br> Belo Horizonte - MG</p>
+          <p class="p-0 m-0">Telefone: (31) 3053-9497</p>
+        </article>
+    
+        <article class="col-md-4 p-2">
+          <h5>Clínica Vida Nova</h5>
+          <p class="p-0 m-0">Rua Santo Antonio, 205, Venda Nova , <br> Belo Horizonte - MG</p>
+          <p class="p-0 m-0">Telefone: (31) 3568-9222</p>
+        </article>
+      </div>
+    </section>
+    
+    <br>
+    <p class="text-center">*Atendimento de segunda a sexta das 9h as 18h</p>
+
+    
+
+    <!-- Ícone do WhatsApp -->
     <div>
-      <a href="https://wa.me/5511984382909" 
-         target="_blank">
-         <img  class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png" />
+      <a href="https://wa.me/5511984382909" target="_blank">
+        <img class="whatsapp" src="https://images.tcdn.com.br/static_inst/integracao/imagens/whatsapp.png" />
       </a>
+    </div>
+
+  </main>
+
+  <footer class="bg-secondary p-3">
+    <p class="text-light m-0 text-center">Contato:
+      <a class="text-light" href="mailto:email@exemplo.com.br"> email@exemplo.com.br</a>
+    </p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <dialog class="modal-content">
+        <header class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Entre em Contato</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </header>
+        <main class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="formGroupExampleInput">Nome completo</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@examplo.com.br">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Deixe seu comentário</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira seu comentário aqui..."></textarea>
+            </div>
+          </form>
+        </main>
+        <footer class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn botao-cor-especial">Enviar</button>
+        </footer>
+      </dialog>
+    </div>
   </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
